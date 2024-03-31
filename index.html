@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Required meta tags -->
+  <title>上海刈麦科技有限公司</title>
+  <!--<meta charset="utf-8">-->
+  <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+  <meta name="keywords" content="上海刈麦科技有限公司" />
+  <meta name="description" content="上海刈麦科技有限公司" />
+  <link type="image/x-icon" href="/assets/imgs/index/favicon.ico" rel="shortcut icon">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css?v=1573982635">
+  <link rel="stylesheet" href="css/animate.min.css?v=1573982635">
+  <link rel="stylesheet" href="css/main.css?v=1573982635">
+  <link rel="stylesheet" href="css/swiper.min.css?v=1573982635">
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/anime.min.js"></script>
+  <script src="js/swiper.min.js?v=1573982635"></script>
+  <link rel="stylesheet" href="css/index.css?v=1573982635">
+</head>
+<body>
+<header id="header">
+  <div class="my-container">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-light"> <a class="navbar-brand" href="#"> <h3 class="desc-title">上海刈麦科技有限公司</h3> </a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav ">
+            <li class="nav-item active"> <a class="nav-link" href="index.html" >首页</a> </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- 主要内容 开始 -->
+<div class="swiper-container pc">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"> <img src="images/5d2338f34fa1a.png" alt="" class="img-responsive" height="800"> </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+<div class="swiper-container web">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"> <img src="images/5d2338f7947fd.png" alt="" class="img-responsive"> </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+<div class="container">
+  <div class="about"> <img class="about-img" src="images/about.png">
+    <div class="about-desc">
+      <h3 class="desc-title">经营范围</h3>
+      <p class="desc-p2"> 一般项目：技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；软件开发；
+        企业形象策划；市场策划营销；市场掉擦汗（不含涉外调查）；
+        摄影扩印服务；摄影及视频制作；广告设计、代理；广告制作；广告发布；计算机软硬件及辅助设配批发；
+        计算机硬件及辅助设备零售；互联网销售（除销售需要的许可的商品）；家具销售。（除依法须经批准的项目外，凭经营执照依法自主开展经营活动。）</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  var swiper = new Swiper('.middle', {
+    slidesPerView: 3,
+    spaceBetween: 48,
+    // centeredSlides: true,
+    loop: false,
+  });
+  $('#prev').click(function () {
+    swiper.slidePrev();
+  })
+  $('#next').click(function () {
+    swiper.slideNext();
+  })
+  var swiper2 = new Swiper('.swiper2-container', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    loop: false,
+  });
+</script>
+<script language="javascript">
+  var count = 1;
+  if (count > 1) {
+    var mySwiper = new Swiper('.pc', {
+      autoplay: true,//可选选项，自动滑动
+      loop: true,//无缝
+      speed: 2000,
+      pagination: {
+        el: '.swiper-pagination'
+      },
+    })
+    var mySwiperWeb = new Swiper('.web', {
+      autoplay: true,//可选选项，自动滑动
+      loop: true,//无缝
+      speed: 2000,
+      pagination: {
+        el: '.swiper-pagination'
+      },
+    })
+  }
+</script>
+<!-- 主要内容 结束 -->
+
+<footer>
+  <div class="container sx-footer">
+    <div class="left">
+      <p class="address">公司名称：上海刈麦科技有限公司</p>
+      <p class="address">公司电话：18762813996</p>
+      <p class="address">公司地址：上海市闵行区元江路号第1栋</p>
+    </div>
+    <div class="right">
+      <p class="wx">官方微信</p>
+      <img src="images/ma.png" alt="微信二维码"> </div>
+  </div>
+</footer>
+<style>
+  .copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+</style>
+<div class="copyrights" id="links20210126">
+  Collect from <a href="http://www.cssmoban.com/"  title="网站模板">模板之家</a>
+  <a href="http://cooco.net.cn/" title="组卷网">组卷网</a>
+</div>
+</body>
+<script>
+  $('.navbar-toggler').on('click', function (e) {
+    $('.masker').toggle();
+  })
+  $('.masker').on('click', function (e) {
+    $(this).css('display', 'none');
+    $('#navbarSupportedContent').toggleClass('show');
+  })
+</script>
+</html>
